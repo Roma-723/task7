@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, NavLink, Link } from "react-router-dom";
 
 import UseStateExample from "./components/UseStateExample";
 import UseEffectExample from "./components/UseEffectExample";
@@ -11,152 +11,76 @@ import UseContextExample from "./components/UseContextExample";
 import Timer from "./components/Timer";
 
 function App() {
+  const navLinkStyle = ({ isActive }: { isActive: boolean }) =>
+    `rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 border whitespace-nowrap ${
+      isActive
+        ? "bg-white text-black border-white shadow-lg shadow-white/5"
+        : "bg-slate-900 text-slate-400 border-slate-800/80 hover:text-white hover:border-slate-700 hover:bg-slate-800/50"
+    }`;
+
   return (
-    <div className="min-h-screen bg-slate-950 text-white">
-      <header className="border-b border-slate-800 bg-slate-900">
-        <div className="mx-auto max-w-7xl px-6 py-5">
-          <h1 className="text-3xl font-bold">
-            React Hooks Learning Project
-          </h1>
+    <div className="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-white/10 overflow-x-hidden">
+      {/* Шапка */}
+      <header className="sticky top-0 z-50 border-b border-slate-900 bg-slate-950/70 backdrop-blur-md">
+        <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+          <Link to="/" className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity">
+            React Hooks <span className="text-slate-500 font-normal">Lab</span>
+          </Link>
+          <div className="text-xs text-slate-500 font-mono border border-slate-800 rounded-full px-3 py-1 bg-slate-900/50">
+            v18.3+
+          </div>
         </div>
       </header>
 
       <div className="mx-auto max-w-7xl p-6">
-        <nav className="mb-8 flex flex-wrap gap-3">
-          <Link
-            to="/"
-            className="rounded-lg bg-slate-800 px-4 py-2 hover:bg-slate-700"
-          >
-            Home
-          </Link>
-
-          <Link
-            to="/use-state"
-            className="rounded-lg bg-blue-600 px-4 py-2 hover:bg-blue-500"
-          >
+        
+        <nav className="mb-8 flex flex-nowrap gap-2.5 overflow-x-auto pb-3 pt-1 scrollbar-none snap-x mask-gradient">
+          <NavLink to="/" end className={navLinkStyle}>
+            Главная
+          </NavLink>
+          <NavLink to="/use-state" className={navLinkStyle}>
             useState
-          </Link>
-
-          <Link
-            to="/use-effect"
-            className="rounded-lg bg-green-600 px-4 py-2 hover:bg-green-500"
-          >
+          </NavLink>
+          <NavLink to="/use-effect" className={navLinkStyle}>
             useEffect
-          </Link>
-
-          <Link
-            to="/use-ref"
-            className="rounded-lg bg-purple-600 px-4 py-2 hover:bg-purple-500"
-          >
+          </NavLink>
+          <NavLink to="/use-ref" className={navLinkStyle}>
             useRef
-          </Link>
-
-          <Link
-            to="/use-callback"
-            className="rounded-lg bg-pink-600 px-4 py-2 hover:bg-pink-500"
-          >
+          </NavLink>
+          <NavLink to="/use-callback" className={navLinkStyle}>
             useCallback
-          </Link>
-
-          <Link
-            to="/use-memo"
-            className="rounded-lg bg-orange-600 px-4 py-2 hover:bg-orange-500"
-          >
+          </NavLink>
+          <NavLink to="/use-memo" className={navLinkStyle}>
             useMemo
-          </Link>
-
-          <Link
-            to="/react-memo"
-            className="rounded-lg bg-cyan-600 px-4 py-2 hover:bg-cyan-500"
-          >
+          </NavLink>
+          <NavLink to="/react-memo" className={navLinkStyle}>
             React.memo
-          </Link>
-
-          <Link
-            to="/use-reducer"
-            className="rounded-lg bg-red-600 px-4 py-2 hover:bg-red-500"
-          >
+          </NavLink>
+          <NavLink to="/use-reducer" className={navLinkStyle}>
             useReducer
-          </Link>
-
-          <Link
-            to="/use-context"
-            className="rounded-lg bg-yellow-600 px-4 py-2 hover:bg-yellow-500"
-          >
+          </NavLink>
+          <NavLink to="/use-context" className={navLinkStyle}>
             useContext
-          </Link>
-
-          <Link
-            to="/timer"
-            className="rounded-lg bg-emerald-600 px-4 py-2 hover:bg-emerald-500"
-          >
+          </NavLink>
+          <NavLink to="/timer" className={navLinkStyle}>
             Timer
-          </Link>
+          </NavLink>
         </nav>
-
-        <div className="rounded-2xl border border-slate-800 bg-slate-900 p-6">
+        <main className="relative rounded-2xl border border-slate-900 bg-slate-900/30 p-8 backdrop-blur-sm shadow-2xl">
+          <div className="absolute -top-40 -right-40 -z-10 h-80 w-80 rounded-full bg-blue-500/5 blur-[100px] pointer-events-none" />
           <Routes>
-            <Route
-              path="/"
-              element={
-                <div>
-                  <h2 className="mb-3 text-2xl font-bold">
-                    React Hooks
-                  </h2>
-
-                  <p className="text-slate-400">
-                    Выберите раздел сверху.
-                  </p>
-                </div>
-              }
-            />
-
-            <Route
-              path="/use-state"
-              element={<UseStateExample />}
-            />
-
-            <Route
-              path="/use-effect"
-              element={<UseEffectExample />}
-            />
-
-            <Route
-              path="/use-ref"
-              element={<UseRefExample />}
-            />
-
-            <Route
-              path="/use-callback"
-              element={<UseCallbackExample />}
-            />
-
-            <Route
-              path="/use-memo"
-              element={<UseMemoExample />}
-            />
-
-            <Route
-              path="/react-memo"
-              element={<ReactMemoExample />}
-            />
-
-            <Route
-              path="/use-reducer"
-              element={<UseReducerExample />}
-            />
-
-            <Route
-              path="/use-context"
-              element={<UseContextExample />}
-            />
-
-            <Route
-              path="/timer"
-              element={<Timer />}
-            />
+            <Route path="/" element={<div className="max-w-2xl py-8"></div>} />
+            <Route path="/use-state" element={<UseStateExample />} />
+            <Route path="/use-effect" element={<UseEffectExample />} />
+            <Route path="/use-ref" element={<UseRefExample />} />
+            <Route path="/use-callback" element={<UseCallbackExample />} />
+            <Route path="/use-memo" element={<UseMemoExample />} />
+            <Route path="/react-memo" element={<ReactMemoExample />} />
+            <Route path="/use-reducer" element={<UseReducerExample />} />
+            <Route path="/use-context" element={<UseContextExample />} />
+            <Route path="/timer" element={<Timer />} />
           </Routes>
-        </div>
+        </main>
       </div>
     </div>
   );
