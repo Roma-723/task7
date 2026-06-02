@@ -3,7 +3,7 @@ const UseReducerExample = () => {
   return (
     <div>
       <p></p>
-=    </div>
+</div>
   ) 
 }
 
