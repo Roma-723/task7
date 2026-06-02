@@ -24,6 +24,7 @@ const UseEffectExample = () => {
         <h1 className="text-4xl font-bold text-center mb-10">
           Todo Users
         </h1>
+        <p></p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {data?.map((e) => (
