@@ -20,24 +20,18 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-white/10 overflow-x-hidden">
-      {/* Шапка */}
       <header className="sticky top-0 z-50 border-b border-slate-900 bg-slate-950/70 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <Link to="/" className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity">
             React Hooks <span className="text-slate-500 font-normal">Lab</span>
           </Link>
-          <div className="text-xs text-slate-500 font-mono border border-slate-800 rounded-full px-3 py-1 bg-slate-900/50">
-            v18.3+
-          </div>
+       
         </div>
       </header>
 
       <div className="mx-auto max-w-7xl p-6">
         
         <nav className="mb-8 flex flex-nowrap gap-2.5 overflow-x-auto pb-3 pt-1 scrollbar-none snap-x mask-gradient">
-          <NavLink to="/" end className={navLinkStyle}>
-            Главная
-          </NavLink>
           <NavLink to="/use-state" className={navLinkStyle}>
             useState
           </NavLink>

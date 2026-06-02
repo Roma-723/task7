@@ -4,7 +4,7 @@ const UseReducerExample = () => {
     <div>
       
     </div>
-  )
+  ) 
 }
 
 export default UseReducerExample
