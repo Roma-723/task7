@@ -2,8 +2,18 @@
 const UseReducerExample = () => {
   return (
     <div>
-</div>
-  ) 
+
+
+
+
+
+
+
+
+
+      
+    </div>
+  )
 }
 
 export default UseReducerExample
