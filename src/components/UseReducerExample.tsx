@@ -4,7 +4,6 @@ const UseReducerExample = () => {
     <div>
       <p></p>
       <p></p>
-      <p></p>
     </div>
   ) 
 }
