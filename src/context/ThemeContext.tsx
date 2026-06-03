@@ -1,10 +1,13 @@
+import { createContext, useState } from "react";
 
-const ThemeContext = () => {
+export const ThemeContext = createContext<any>(null);
+
+export const ThemeProvider = ({ children }: any) => {
+  const [theme, setTheme] = useState("light");
+
   return (
-    <div>
-      
-    </div>
-  )
-}
-
-export default ThemeContext
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
