@@ -14,7 +14,7 @@ const UseContextExample = () => {
       }`}
     >
       <div
-        className={`w-[400px] p-8 rounded-2xl shadow-xl text-center ${
+        className={`w-100 p-8 rounded-2xl shadow-xl text-center ${
           theme === "dark" ? "bg-slate-800" : "bg-white"
         }`}
       >
