@@ -45,7 +45,6 @@ const ReactMemoExample = () => {
           Parent тағйир ёбад — Child re-render <strong>намешавад</strong>
         </p>
       </div>
-<p></p>
       <Child onIncrement={handleIncrement} count={count} />
     </div>
   );
