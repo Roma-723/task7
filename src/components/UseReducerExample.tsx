@@ -25,14 +25,12 @@ const UseReducerExample = () => {
         </button>
         <button
           onClick={() => dispatch("reset")}
-          className="px-6 py-2 rounded-lg border border-gray-300 text-gray-500 hover:bg-gray-50 transition"
-        >
+          className="px-6 py-2 rounded-lg border border-gray-300 text-gray-500 hover:bg-gray-50 transition">
           Reset
         </button>
         <button
           onClick={() => dispatch("increment")}
-          className="px-6 py-2 rounded-lg border border-green-400 text-green-700 hover:bg-green-50 transition"
-        >
+          className="px-6 py-2 rounded-lg border border-green-400 text-green-700 hover:bg-green-50 transition">
           +
         </button>
       </div>
