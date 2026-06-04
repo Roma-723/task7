@@ -36,5 +36,4 @@ const UseReducerExample = () => {
     </div>
   );
 };
-
 export default UseReducerExample;
