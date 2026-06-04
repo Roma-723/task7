@@ -36,44 +36,34 @@ function App() {
           <NavLink to="/use-state" className={navLinkStyle}>
             useState
           </NavLink>
-
           <NavLink to="/use-effect" className={navLinkStyle}>
             useEffect
           </NavLink>
-
           <NavLink to="/use-ref" className={navLinkStyle}>
             useRef
           </NavLink>
-
           <NavLink to="/use-callback" className={navLinkStyle}>
             useCallback
           </NavLink>
-
           <NavLink to="/use-memo" className={navLinkStyle}>
             useMemo
           </NavLink>
-
           <NavLink to="/react-memo" className={navLinkStyle}>
             React.memo
           </NavLink>
-
           <NavLink to="/use-reducer" className={navLinkStyle}>
             useReducer
           </NavLink>
-
           <NavLink to="/use-context" className={navLinkStyle}>
             useContext
           </NavLink>
-
           <NavLink to="/use-local-storage" className={navLinkStyle}>
             useLocalStorage
           </NavLink>
-
           <NavLink to="/timer" className={navLinkStyle}>
             Timer
           </NavLink>
         </nav>
-
         <main className="relative rounded-2xl border border-slate-900 bg-slate-900/30 p-8 backdrop-blur-sm shadow-2xl">
           <div className="absolute -top-40 -right-40 -z-10 h-80 w-80 rounded-full bg-blue-500/5 blur-[100px] pointer-events-none" />
 
