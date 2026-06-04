@@ -55,7 +55,6 @@ function UseMemoExample() {
             onChange={(e) => setText(e.target.value)}
             className="w-full border border-slate-200 rounded-2xl p-4 outline-none transition-all duration-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 text-slate-700"
           />
-
           {text && (
             <div className="bg-emerald-50 text-emerald-700 p-4 rounded-2xl text-center font-medium border border-emerald-100">
               {text}
@@ -66,5 +65,4 @@ function UseMemoExample() {
     </div>
   );
 }
-
 export default UseMemoExample;
