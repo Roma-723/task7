@@ -75,7 +75,6 @@ function App() {
                   <h1 className="text-4xl font-bold mb-4">
                     React Hooks Lab
                   </h1>
-
                   <p className="text-slate-400">
                     Лоиҳа барои омӯзиши React Hooks.
                   </p>
