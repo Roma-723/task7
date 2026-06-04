@@ -31,7 +31,6 @@ function App() {
           </Link>
         </div>
       </header>
-
       <div className="mx-auto max-w-7xl p-6">
         <nav className="mb-8 flex flex-nowrap gap-2.5 overflow-x-auto pb-3 pt-1 scrollbar-none snap-x mask-gradient">
           <NavLink to="/use-state" className={navLinkStyle}>
