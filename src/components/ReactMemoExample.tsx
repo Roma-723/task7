@@ -29,7 +29,6 @@ const ReactMemoExample = () => {
   const handleIncrement = useCallback(() => {
     setCount((prev) => prev + 1);
   }, []);
-
   return (
     <div className="flex flex-col items-center gap-6 p-10">
       <div className="flex flex-col items-center gap-2 p-6 rounded-xl border border-gray-200 w-full max-w-sm">
