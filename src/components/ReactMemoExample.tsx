@@ -21,7 +21,6 @@ const Child = React.memo(({ onIncrement, count }: ChildProps) => {
     </div>
   );
 });
-
 const ReactMemoExample = () => {
   const [count, setCount] = useState(0);
   const [parentState, setParentState] = useState(0);
