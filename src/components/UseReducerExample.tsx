@@ -12,7 +12,6 @@ const reducer = (state: number, action: Action): number => {
 
 const UseReducerExample = () => {
   const [count, dispatch] = useReducer(reducer, 0);
-
   return (
     <div className="flex flex-col items-center gap-6 p-10">
       <div className="text-7xl font-medium tabular-nums">{count}</div>
