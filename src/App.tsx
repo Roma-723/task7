@@ -93,7 +93,6 @@ function App() {
               element={<UseLocalStorange />}
             />
             <Route path="/timer" element={<Timer />} />
-
             <Route
               path="*"
               element={
