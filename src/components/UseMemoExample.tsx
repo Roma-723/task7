@@ -37,7 +37,6 @@ function UseMemoExample() {
         >
           Increment +
         </button>
-
         <div className="relative my-8">
           <div className="absolute inset-0 flex items-center">
             <div className="w-full border-t border-slate-200"></div>
