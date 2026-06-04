@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 const UseStateExample = () => {
   const [state, setState] = useState(0);
   return (
