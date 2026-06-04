@@ -34,8 +34,7 @@ const ReactMemoExample = () => {
         <div className="text-2xl font-medium">{parentState}</div>
         <button
           onClick={() => setParentState((p) => p + 1)}
-          className="px-6 py-2 rounded-lg border border-blue-400 text-blue-700 hover:bg-blue-50 transition"
-        >
+          className="px-6 py-2 rounded-lg border border-blue-400 text-blue-700 hover:bg-blue-50 transition">
           Parent-ро тағйир деҳ
         </button>
         <p className="text-xs text-gray-400 text-center">
