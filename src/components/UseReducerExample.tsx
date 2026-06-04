@@ -9,7 +9,6 @@ const reducer = (state: number, action: Action): number => {
     case "reset": return 0;
   }
 };
-
 const UseReducerExample = () => {
   const [count, dispatch] = useReducer(reducer, 0);
   return (
