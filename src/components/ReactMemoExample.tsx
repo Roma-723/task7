@@ -7,7 +7,6 @@ type ChildProps = {
 
 const Child = React.memo(({ onIncrement, count }: ChildProps) => {
   console.log("Render Child");
-
   return (
     <div className="flex flex-col items-center gap-3 p-6 rounded-xl border border-gray-200">
       <p className="text-sm text-gray-400 font-medium">Child компонент</p>
