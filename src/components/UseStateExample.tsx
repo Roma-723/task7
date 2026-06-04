@@ -1,6 +1,8 @@
 import { useState } from "react";
 const UseStateExample = () => {
+
   const [state, setState] = useState(0);
+
   return (
     <div className="flex min-h-75 items-center justify-center p-6 rounded-2xl  border border-[#111927] max-w-2xl mx-auto my-8 shadow-2xl">
       <div className="flex items-center gap-8 bg-[#09111f]/50 px-8 py-4 rounded-full border border-[#162235] shadow-inner">
