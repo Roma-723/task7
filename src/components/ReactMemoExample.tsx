@@ -4,7 +4,6 @@ type ChildProps = {
   onIncrement: () => void;
   count: number;
 };
-
 const Child = React.memo(({ onIncrement, count }: ChildProps) => {
   console.log("Render Child");
   return (
