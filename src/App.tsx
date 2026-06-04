@@ -66,7 +66,6 @@ function App() {
         </nav>
         <main className="relative rounded-2xl border border-slate-900 bg-slate-900/30 p-8 backdrop-blur-sm shadow-2xl">
           <div className="absolute -top-40 -right-40 -z-10 h-80 w-80 rounded-full bg-blue-500/5 blur-[100px] pointer-events-none" />
-
           <Routes>
             <Route
               path="/"
