@@ -45,5 +45,4 @@ const ReactMemoExample = () => {
     </div>
   );
 };
-
 export default ReactMemoExample;
