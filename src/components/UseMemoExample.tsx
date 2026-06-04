@@ -31,7 +31,6 @@ function UseMemoExample() {
             <p className="text-4xl font-extrabold text-blue-600">{square}</p>
           </div>
         </div>
-
         <button
           onClick={() => setCount(count + 1)}
           className="w-full bg-blue-600 text-white py-4 rounded-2xl font-bold shadow-lg shadow-blue-500/20 hover:bg-blue-700 transition-all duration-200"
