@@ -47,7 +47,6 @@ function UseMemoExample() {
             </span>
           </div>
         </div>
-
         <div className="space-y-4">
           <input
             type="text"
