@@ -4,7 +4,6 @@ import { FaMoon, FaSun } from "react-icons/fa";
 
 const UseContextExample = () => {
   const { theme, setTheme } = useContext(ThemeContext);
-
   return (
     <div
       className={`min-h-screen flex items-center justify-center transition-all duration-300 ${
