@@ -15,9 +15,7 @@ const UseContextExample = () => {
     >
       <div
         className={`w-100 p-8 rounded-2xl shadow-xl text-center ${
-          theme === "dark" ? "bg-slate-800" : "bg-white"
-        }`}
-      >
+          theme === "dark" ? "bg-slate-800" : "bg-white" }`}>
         <h1 className="text-3xl font-bold mb-4">Theme Switcher</h1>
         <p className="text-lg mb-6">
           Current Theme:
