@@ -23,8 +23,7 @@ function App() {
         <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
           <Link
             to="/"
-            className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity"
-          >
+            className="text-xl font-semibold tracking-tight hover:opacity-80 transition-opacity">
             React Hooks <span className="text-slate-500 font-normal">Lab</span>
           </Link>
         </div>
