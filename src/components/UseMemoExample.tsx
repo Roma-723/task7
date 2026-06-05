@@ -22,7 +22,6 @@ function UseMemoExample() {
             </p>
             <p className="text-4xl font-extrabold text-slate-700">{count}</p>
           </div>
-
           <div className="bg-blue-50/50 p-4 rounded-2xl text-center border border-blue-50">
             <p className="text-xs font-bold uppercase tracking-wider text-blue-400 mb-1">
               Square

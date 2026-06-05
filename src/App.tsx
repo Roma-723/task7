@@ -18,7 +18,6 @@ function App() {
         ? "bg-white text-black border-white shadow-lg shadow-white/5"
         : "bg-slate-900 text-slate-400 border-slate-800/80 hover:text-white hover:border-slate-700 hover:bg-slate-800/50"
     }`;
-
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-white/10 overflow-x-hidden">
       <header className="sticky top-0 z-50 border-b border-slate-900 bg-slate-950/70 backdrop-blur-md">
