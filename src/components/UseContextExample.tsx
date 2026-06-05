@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { FaMoon, FaSun } from "react-icons/fa";
-
 const UseContextExample = () => {
   const { theme, setTheme } = useContext(ThemeContext);
   return (
