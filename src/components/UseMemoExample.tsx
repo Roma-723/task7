@@ -15,7 +15,6 @@ function UseMemoExample() {
         <h1 className="text-2xl font-black text-center text-slate-800 mb-8 tracking-tight">
           useMemo Example
         </h1>
-
         <div className="grid grid-cols-2 gap-4 mb-8">
           <div className="bg-slate-50 p-4 rounded-2xl text-center border border-slate-100">
             <p className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">
