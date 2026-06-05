@@ -28,16 +28,13 @@ const UseContextExample = () => {
         <div className="flex justify-center gap-4">
           <button
             onClick={() => setTheme("dark")}
-            className="flex items-center gap-2 px-5 py-3 rounded-lg bg-slate-950 text-white hover:scale-105 transition-all duration-300"
-          >
+            className="flex items-center gap-2 px-5 py-3 rounded-lg bg-slate-950 text-white hover:scale-105 transition-all duration-300">
             <FaMoon />
             Dark
           </button>
-
           <button
             onClick={() => setTheme("light")}
-            className="flex items-center gap-2 px-5 py-3 rounded-lg bg-yellow-400 text-black hover:scale-105 transition-all duration-300"
-          >
+            className="flex items-center gap-2 px-5 py-3 rounded-lg bg-yellow-400 text-black hover:scale-105 transition-all duration-300">
             <FaSun />
             Light
           </button>
@@ -46,5 +43,4 @@ const UseContextExample = () => {
     </div>
   );
 };
-
 export default UseContextExample;
