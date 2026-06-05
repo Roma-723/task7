@@ -10,7 +10,6 @@ import UseReducerExample from "./components/UseReducerExample";
 import UseContextExample from "./components/UseContextExample";
 import UseLocalStorange from "./components/UseLocalStorange";
 import Timer from "./components/Timer";
-
 function App() {
   const navLinkStyle = ({ isActive }: { isActive: boolean }) =>
     `rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 border whitespace-nowrap ${
