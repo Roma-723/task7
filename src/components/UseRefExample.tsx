@@ -1,42 +1,19 @@
-import { useCallback, useRef, useState } from "react";
-function UseRefExample() {
-  const countRef = useRef(0);
-  const [state, setState] = useState(0);
-  const increaseRef = () => {
-    countRef.current++;
-  };
-  const increaseState = useCallback(() => {
-    setState((prev) => prev + 1);
-  }, []);
+
+const UseRefExample = () => {
   return (
-    <div className="min-h-screen bg-slate-100 flex items-center justify-center p-4">
-      <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-8">
-        <h1 className="text-3xl font-bold text-center text-slate-800 mb-6">
-          useRef Example
-        </h1>
-        <div className="bg-slate-50 rounded-2xl p-6 text-center mb-6">
-          <p className="text-slate-500 text-sm mb-2">
-            useState Value
-          </p>
-          <h2 className="text-5xl font-bold text-blue-600">
-            {state}
-          </h2>
-        </div>
-        <div className="grid gap-4">
-          <button
-            onClick={increaseState}
-            className="w-full py-3 rounded-xl bg-blue-600 text-white font-semibold hover:scale-105 transition">
-            Increment State
-          </button>
-          <button
-            onClick={increaseRef}
-            className="w-full py-3 rounded-xl bg-emerald-600 text-white font-semibold hover:scale-105 transition">
-            Increment Ref
-          </button>
-        </div>
+    <div className="flex justify-center">
+      <div className="bg-slate-900 w-80 flex justify-center rounded-2xl h-70">
+        <form>
+          <div className="w-60 mt-10">
+            <h1 className="text-2xl text-center font-bold">Login</h1>
+            <input className="w-full outline-blue-950 outline-2  border-blue-900  border border-solid h-10 rounded-[5px] mt-3 placeholder:pl-2 pl-2"  placeholder="Name" type="text" />
+            <input className="w-full outline-blue-950 outline-2   border-blue-900 border border-solid h-10 rounded-[5px] mt-3 placeholder:pl-2 pl-2" placeholder="password" type="number" />
+            <button className="w-full mt-5 bg-slate-800 h-10  rounded-[5px]">Save</button>
+          </div>
+        </form>
       </div>
     </div>
-  );
+  )
 }
 
-export default UseRefExample;
+export default UseRefExample
