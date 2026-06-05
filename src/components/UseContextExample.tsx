@@ -24,7 +24,6 @@ const UseContextExample = () => {
           Current Theme:
           <span className="font-bold ml-2">{theme}</span>
         </p>
-
         <div className="flex justify-center gap-4">
           <button
             onClick={() => setTheme("dark")}
