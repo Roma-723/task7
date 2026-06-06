@@ -1,21 +1,25 @@
 import { useCallback, useState } from "react"
 
 const UseCallbackExample = () => {
-  const [state, setState] = useState(0)
+  const [state, setState] = useState(1)
 
-  const increament = useCallback(() => {
-    setState(state + 1)
-  }, [state])
-  const decreament = useCallback(() => {
-    setState(state - 1)
-  }, [state])
+  const loop = useCallback((limit: number) => {
+    let result = ""
+    for (let i = 1; i <= limit; i++) {
+      result += i * i + " "
+    }
+    return result
+  }, [])
+
   return (
-    <div className="flex justify-center">
-      <div className="flex gap-10 ">
-        <p className="text-2xl cursor-pointer w-10 h-10 border items-center text-center rounded-[50%] " onClick={() => increament()}>+</p>
-        <p className="text-3xl font-bold">{state}</p>
-        <p className="text-2xl border w-10 h-10 items-center text-center rounded-[50%] cursor-pointer" onClick={() => decreament()}>-</p>
-      </div>
+    <div className="flex flex-col items-center gap-4 p-6">
+      <p className="text-lg text-blue-400">{loop(state)}</p>
+      <button
+        onClick={() => setState(prev => prev + 1)}
+        className="px-4 py-2 bg-green-500 text-white rounded"
+      >
+        +1
+      </button>
     </div>
   )
 }
