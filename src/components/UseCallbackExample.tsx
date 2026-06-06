@@ -6,6 +6,9 @@ const UseCallbackExample = () => {
   const loop = useCallback((limit: number) => {
     let result = ""
     for (let i = 1; i <= limit; i++) {
+   
+   
+   
       result += i * i + " "
     }
     return result
