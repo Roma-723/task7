@@ -63,7 +63,6 @@ const UseRefExample = () => {
             />
             <p ref={nameRef} className="text-red-500 mt-2 text-sm"></p>
             <div className="flex gap-5">
-
               <input
                 ref={passwordRef}
                 className="w-full outline-blue-950 outline-2 h-10 rounded-[5px] mt-3 pl-2 transition-all focus:ring-4 focus:ring-blue-500"
