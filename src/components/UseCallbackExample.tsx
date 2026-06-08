@@ -7,7 +7,6 @@ function App() {
     alert(name);
   }, [name]);
   console.log("name");
-
   return (
     <div>
       <input placeholder="name"
