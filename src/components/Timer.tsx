@@ -38,11 +38,9 @@ const TimerExample = () => {
       >
         {isRunning ? "Кор мекунад" : "кор намекунад"}
       </span>
-
       <div className="text-7xl font-medium tabular-nums">
         {pad(seconds)}
       </div>
-
       <p className="text-sm text-gray-400 -mt-6">секунд</p>
 
       <div className="flex gap-3">
