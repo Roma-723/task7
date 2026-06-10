@@ -5,9 +5,9 @@ function UseMemoExample() {
   const [text, setText] = useState("");
 
   const square = useMemo(() => {
-    console.log("Calculated!");
     return count * count;
   }, [count]);
+  console.log("Calculated!");
 
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-4">
