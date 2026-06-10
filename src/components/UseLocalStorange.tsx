@@ -2,7 +2,8 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 const UseLocalStorange = () => {
   const [name, setName] = useLocalStorage("name", "");
-
+  console.log("firsName");
+  
   return (
     <div className="max-w-xl mx-auto space-y-6">
       <h1 className="text-3xl font-bold">useLocalStorage</h1>
