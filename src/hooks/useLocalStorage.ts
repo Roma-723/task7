@@ -5,8 +5,7 @@ function useLocalStorage<T>(key: string, initialValue: T) {
     if (savedValue !== null) {
       return JSON.parse(savedValue)}
     return initialValue;
-  });
-  
+  }); 
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
   }, [key, value]);
