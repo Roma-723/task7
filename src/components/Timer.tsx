@@ -24,7 +24,6 @@ const TimerExample = () => {
     setSeconds(0);
   };
 
-
   const isRunning = intervalRef.current !== null;
 
   return (
