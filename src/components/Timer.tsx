@@ -19,6 +19,7 @@ const TimerExample = () => {
       intervalRef.current = null;
     }
   };
+  
 
   const resetTimer = () => {
     stopTimer();
