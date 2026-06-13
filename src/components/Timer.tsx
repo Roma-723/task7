@@ -25,7 +25,6 @@ const TimerExample = () => {
   };
 
 
-  
   const isRunning = intervalRef.current !== null;
 
   return (
