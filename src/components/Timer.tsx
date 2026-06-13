@@ -25,7 +25,6 @@ const TimerExample = () => {
   };
 
   const isRunning = intervalRef.current !== null;
-
   return (
     <div className="flex flex-col items-center gap-8 p-10">
       <span
