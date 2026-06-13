@@ -22,7 +22,6 @@ const TimerExample = () => {
 
 
 
-
   const resetTimer = () => {
     stopTimer();
     setSeconds(0);
